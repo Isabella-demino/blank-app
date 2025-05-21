@@ -34,7 +34,7 @@ if uploaded_file is not None:
             selected_columns = st.multiselect(
                 "Select columns for descriptive statistics:",
                 numeric_cols,
-                default=numeric_cols # Select all numeric by default
+                default=[] # Select all numeric by default
             )
 
             if selected_columns:
