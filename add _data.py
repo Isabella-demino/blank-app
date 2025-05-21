@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from scipy import stats
 
 advanced_page = st.Page("advanced_descriptive.py", title="Create entry", icon=":material/add_circle:")
 
