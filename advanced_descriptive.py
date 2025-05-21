@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import scipy as sp
 
-st.set_page_config(page_title="advanced descriptive", layout="centered")
+st.set_page_config(page_title="advanced_descriptive.py", layout="centered")
 
 st.title("📊 Descriptive Statistics Calculator")
 
