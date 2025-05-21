@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import scipy as sp
 
 st.set_page_config(page_title="Descriptive Statistics App", layout="centered")
 
