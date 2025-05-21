@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
+from scipy import stats
 
 advanced_page = st.Page("advanced_descriptive.py", title="Create entry", icon=":material/add_circle:")
 
 pg = st.navigation([advanced_page])
 st.set_page_config(page_title="Descriptive Statistics App", page_icon=":material/edit:")
 
-st.title("📊 Descriptive Statistics Calculator")
+st.title("School Safety Data Analysis Tool")
 
 st.markdown("""
 Upload your data (CSV or Excel) and get basic descriptive statistics.
