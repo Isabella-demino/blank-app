@@ -5,7 +5,6 @@ advanced_page = st.Page("advanced_descriptive.py", title="Create entry", icon=":
 
 pg = st.navigation([advanced_page])
 st.set_page_config(page_title="Descriptive Statistics App", page_icon=":material/edit:")
-pg.run()
 
 st.title("📊 Descriptive Statistics Calculator")
 
