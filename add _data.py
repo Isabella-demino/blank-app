@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-pg = st.navigation([st.Page("advanced descriptive.py")])
-pg.run()
+advanced_page = st.Page("advanced descriptive.py", title="Create entry", icon=":material/add_circle:")
 
-st.set_page_config(page_title="Descriptive Statistics App", layout="centered")
+pg = st.navigation([advanced_page])
+st.set_page_config(page_title="Descriptive Statistics App", page_icon=":material/edit:")
+pg.run()
 
 st.title("📊 Descriptive Statistics Calculator")
 
