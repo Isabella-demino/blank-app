@@ -41,17 +41,12 @@ if uploaded_file is not None:
                 st.write("### Data Types:")
                 data_desc = df[selected_columns].dtypes
                 st.write("please confirm that the data types listed for your variables match the type of analysis you would like to conduct")
+                st.dataframe(data_desc)
 
                 st.write("### Descriptive Statistics:")
                 # Compute descriptive statistics
                 desc_stats = df[selected_columns].describe()
                 st.dataframe(desc_stats)
-
-                # Optional: Add visualizations
-                st.write("### Data Distribution (Histograms):")
-                for col in selected_columns:
-                    st.subheader(f"Distribution of {col}")
-                    st.bar_chart(df[col]) # Streamlit's built-in histogram
             else:
                 st.info("Please select at least one numeric column to compute statistics.")
 
