@@ -39,6 +39,10 @@ if uploaded_file is not None:
             )
 
             if selected_columns:
+                st.write("### Data Types:")
+                data_desc = df[selected_columns].dtypes
+                st.write("please confirm that the data types listed for your variables match the type of analysis you would like to conduct")
+
                 st.write("### Descriptive Statistics:")
                 # Compute descriptive statistics
                 desc_stats = df[selected_columns].describe()
