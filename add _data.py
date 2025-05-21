@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
 advanced_page = st.Page("advanced_descriptive.py", title="Create entry", icon=":material/add_circle:")
 
 pg = st.navigation([advanced_page])
