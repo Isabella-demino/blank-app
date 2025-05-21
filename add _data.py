@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+pg = st.navigation([st.Page("page_1.py"), st.Page("page_2.py")])
+pg.run()
+
 st.set_page_config(page_title="Descriptive Statistics App", layout="centered")
 
 st.title("📊 Descriptive Statistics Calculator")
