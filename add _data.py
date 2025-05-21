@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from scipy import stats
+
 
 advanced_page = st.Page("advanced_descriptive.py", title="Create entry", icon=":material/add_circle:")
 
@@ -56,6 +56,6 @@ if uploaded_file is not None:
 
     except Exception as e:
         st.error(f"An error occurred: {e}. Please check your file format and data.")
-
+from scipy import stats
 st.markdown("---")
 st.markdown("Built with ❤️ using Streamlit and Pandas.")
